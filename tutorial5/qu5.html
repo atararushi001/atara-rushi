@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $( function() {
+          $( "#tabs" ).tabs();
+        } );
+
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+
+        $( function() {
+          $( "#accordion" ).accordion();
+        } );
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Combination of Previously Shown Widgets</h1>
+
+    <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Frontend Technology</a></li>
+          <li><a href="#tabs-2">Framework</a></li>
+          <li><a href="#tabs-3">Backend Languages</a></li>
+        </ul>
+        <div id="tabs-1">
+          <ul>
+            <ol>
+                <li>html</li>
+                <li>css</li>
+                <li>java script</li>
+                <li>jquery</li>
+            </ol>
+          </ul>
+        </div>
+        <div id="tabs-2">
+            <ul>
+                <ol>
+                    <li>djnago</li>
+                    <li>dot net</li>
+                    <li>laravel</li>
+                    <li>codeigniter</li>
+                 
+                </ol>
+            </ul>
+        </div>
+        <div id="tabs-3">
+            <ul>
+                <ol>
+                    <li>PHP</li>
+                    <li>java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ol>
+            </ul>
+        </div>
+    </div>
+
+    <div id="accordion">
+        <h3>frontend Technology</h3>
+        <div>
+            <ul>
+                <p>Subjects</p>
+                <ol>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>java script</li>
+                    <li>jquery</li>
+                </ol>
+              </ul>
+        </div>
+        <h3>Framework</h3>
+        <div>
+            <ul>
+                <p>Subjects</p>
+                <ol>
+                    <li>djnago</li>
+                    <li>dot net</li>
+                    <li>laravel</li>
+                    <li>codeigniter</li>
+                </ol>
+            </ul>
+        </div>
+        <h3>Backend Languages</h3>
+        <div>
+            <ul>
+                <p>Subjects</p>
+                <ol>
+                    <li>PHP</li>
+                    <li>java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ol>
+              </ul>
+        </div>
+    </div> 
+    <p>Date: <input type="text" id="datepicker"></p>
+</body>
+</html>
